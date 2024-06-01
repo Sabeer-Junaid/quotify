@@ -176,7 +176,7 @@ cd quotify
 ## 🤝 Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.<br>
-check out <a href="https://github.com/Infiland/TheColorfulCreature/blob/main/CONTRIBUTING.md" target="blank">CONTRIBUTING.md</a>
+check out <a href="https://github.com/Sabeer-Junaid/quotify/blob/main/General_Contributing.md" target="blank">CONTRIBUTING.md</a>
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
