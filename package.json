@@ -8,8 +8,5 @@
     },
     "keywords": [],
     "author": "Sabeer Junaid",
-    "license": "MIT",
-    "dependencies": {
-      "none": "none"
+    "license": "MIT"
     }
-  }
