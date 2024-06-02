@@ -1,107 +1,106 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #ff512f, #dd2476);
-  }
-  
-  .menu {
-    display: flex;
-    gap: 10px; /* Add some space between buttons */
-  }
-  
-  .menu-item {
-    background-color: white;
-    border: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px; /* Round corners */
-    position: relative;
-  }
-  
-  .menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .menu-item:focus {
-    outline: none;
-  }
-  
-  .menu-item::after {
-    content: '';
-    display: inline-block;
-    margin-left: 5px;
-    border: 5px solid transparent;
-    border-top-color: black;
-    vertical-align: middle;
-  }
-  
-  .menu-icon {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    margin-left: auto; /* Move to the right end */
-  }
-  
-  .content {
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .quote {
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  .author {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .icon {
-    background-color: #ff512f;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .icon:hover {
-    background-color: #dd2476;
-  }
-  
-  .send-icon::before {
-    content: "✉️";
-  }
-  
-  .refresh-icon::before {
-    content: "🔄";
-  }
-  
-  .copy-icon::before {
-    content: "📋";
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.menu {
+  display: flex;
+  gap: 10px; /* Add some space between buttons */
+}
+
+.menu-item {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px; /* Round corners */
+  position: relative;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-item:focus {
+  outline: none;
+}
+
+.menu-item::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  border: 5px solid transparent;
+  border-top-color: black;
+  vertical-align: middle;
+}
+
+.menu-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto; /* Move to the right end */
+}
+
+.content {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  background-color: #ff512f;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #dd2476;
+}
+
+.send-icon::before {
+  content: "✉️";
+}
+
+.refresh-icon::before {
+  content: "🔄";
+}
+
+.copy-icon::before {
+  content: "📋";
+}
