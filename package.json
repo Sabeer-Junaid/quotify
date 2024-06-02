@@ -1,0 +1,15 @@
+{
+    "name": "quotify",
+    "version": "1.0.0",
+    "description": "A simple and elegant quote generator website that displays random inspirational quotes.",
+    "main": "index.html",
+    "scripts": {
+      "start": "open index.html"
+    },
+    "keywords": [],
+    "author": "Sabeer Junaid",
+    "license": "MIT",
+    "dependencies": {
+      "none": "none"
+    }
+  }
