@@ -1,32 +1,44 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #1c1c1c;
+  background-color: var(--greyishblack);
   color: white;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+:root {
+  --greyishblack: hsl(0, 0%, 10%);
+  --lightorangemix: hsl(10, 100%, 59%);
+  --purpinkish: hsl(333, 73%, 51%);
+}
+
 .navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 95%;
   padding: 10px 20px;
-  background: linear-gradient(to right, #ff512f, #dd2476);
+  background: linear-gradient(
+    to right,
+    var(--lightorangemix),
+    var(--purpinkish)
+  );
+  margin-top: 1rem;
+  border-radius: 2rem;
 }
 
 .menu {
   display: flex;
-  gap: 10px; /* Add some space between buttons */
 }
 
 .menu-item {
   background-color: white;
   border: none;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 20px; /* Round corners */
@@ -83,14 +95,14 @@ body {
 }
 
 .icon {
-  background-color: #ff512f;
+  background-color: var(--lightorangemix);
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .icon:hover {
-  background-color: #dd2476;
+  background-color: var(--purpinkish);
 }
 
 .send-icon::before {
