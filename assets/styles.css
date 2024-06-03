@@ -33,7 +33,7 @@ body {
   display: flex;
 }
 
-.menu-item {
+.menu .btn {
   background-color: white;
   border: none;
   color: black;
@@ -69,23 +69,40 @@ body {
   margin-left: auto; /* Move to the right end */
 }
 
+.cover-logo {
+  justify-content: center;
+  width: 10rem;
+  justify-content: center;
+  margin-top: 1rem;
+  /* background-color: aqua; */
+}
+
+.cover-logo img {
+  height: 10rem;
+  width: 10rem;
+}
+
 .content {
   text-align: center;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: blue; */
+  height: 18rem;
 }
 
 .quote {
   font-size: 24px;
   font-style: italic;
   margin-bottom: 10px;
+  font-family: "Vidaloka", sans-serif;
 }
 
 .author {
   font-size: 20px;
   margin-bottom: 20px;
+  font-family: "Rokkitt", sans-serif;
+  margin-left: 5rem;
 }
 
 .icons {
@@ -94,25 +111,19 @@ body {
   gap: 20px;
 }
 
-.icon {
-  background-color: var(--lightorangemix);
-  padding: 10px;
+.icons button {
   border-radius: 50%;
-  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    var(--lightorangemix),
+    var(--purpinkish)
+  );
+  height: 3rem;
+  width: 3rem;
 }
 
-.icon:hover {
-  background-color: var(--purpinkish);
-}
-
-.send-icon::before {
-  content: "✉️";
-}
-
-.refresh-icon::before {
-  content: "🔄";
-}
-
-.copy-icon::before {
-  content: "📋";
+.icons button img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: -0.3rem;
 }
