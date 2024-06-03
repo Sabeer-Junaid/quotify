@@ -14,6 +14,7 @@ body {
   --purpinkish: hsl(333, 73%, 51%);
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -69,6 +70,8 @@ body {
   margin-left: auto; /* Move to the right end */
 }
 
+/* Cover LOGO */
+
 .cover-logo {
   justify-content: center;
   width: 10rem;
@@ -77,10 +80,31 @@ body {
   /* background-color: aqua; */
 }
 
+@media (min-width: 768px) {
+  .cover-logo {
+    /* background-color: red; */
+    margin-top: 3rem;
+  }
+  .content {
+    margin-top: -3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .cover-logo {
+    /* background-color: royalblue; */
+    margin-top: 3rem;
+  }
+  .content {
+    margin-top: -3rem;
+  }
+}
+
 .cover-logo img {
   height: 10rem;
   width: 10rem;
 }
+
+/* Main Content */
 
 .content {
   text-align: center;
@@ -89,6 +113,7 @@ body {
   justify-content: center;
   /* background-color: blue; */
   height: 18rem;
+  margin-top: -2rem;
 }
 
 .quote {
