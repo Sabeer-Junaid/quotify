@@ -143,3 +143,47 @@ body {
   width: 2rem;
   margin-left: -0.3rem;
 }
+
+/* Alert */
+
+#alert-box {
+  height: 2rem;
+  width: 5rem;
+  background-color: white;
+  border-radius: 1rem;
+  position: absolute;
+  margin-top: 5.4rem;
+  margin-left: 1rem;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  #alert-box {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #alert-box {
+    margin-left: 2.2rem;
+  }
+}
+
+#alert-box p {
+  color: black;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-top: 0.3rem;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,6 +1,6 @@
 // script.js
 
-// API endpoints
+//API endpoints
 const apiUrl = "https://api.quotable.io/random";
 "https://quoteapi.com/api/v1/quote?limit=1",
   "https://theysaidso.com/api/quote-of-the-day",
@@ -38,13 +38,41 @@ getQuote();
 const quote = document.querySelector(".quote");
 const CopyBtn = document.getElementById("copy-btn");
 const author = document.querySelector(".author");
+const alertBox = document.getElementById("alert-box");
+const alertMessage = document.getElementById("alert-message");
 
 CopyBtn.addEventListener("click", async () => {
   try {
     const quoteText = `${quote.textContent} ${author.textContent}`;
     await navigator.clipboard.writeText(quoteText);
-    alert("Quote copied to clipboard!");
+    alertBox.classList.remove("hidden");
+    setTimeout(() => {
+      alertBox.classList.add("hidden");
+    }, 2000);
   } catch (error) {
     console.error("Error copying quote:", error);
+  }
+});
+
+// Share
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+  try {
+    const quoteText = `${quote.textContent} ${author.textContent}`;
+    const shareData = {
+      title: "Inspirational Quote",
+      text: quoteText,
+      url: window.location.href, // optional
+    };
+
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else {
+      console.error("Web Share API not supported");
+    }
+  } catch (error) {
+    console.error("Error sharing quote:", error);
   }
 });
