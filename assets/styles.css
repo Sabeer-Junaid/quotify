@@ -82,20 +82,12 @@ body {
 
 @media (min-width: 768px) {
   .cover-logo {
-    /* background-color: red; */
     margin-top: 3rem;
-  }
-  .content {
-    margin-top: -3rem;
   }
 }
 @media (min-width: 1024px) {
   .cover-logo {
-    /* background-color: royalblue; */
     margin-top: 3rem;
-  }
-  .content {
-    margin-top: -3rem;
   }
 }
 
@@ -112,8 +104,7 @@ body {
   flex-direction: column;
   justify-content: center;
   /* background-color: blue; */
-  height: 18rem;
-  margin-top: -2rem;
+  align-items: center;
 }
 
 .quote {
