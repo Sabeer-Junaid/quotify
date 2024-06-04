@@ -169,6 +169,12 @@ body {
   }
 }
 
+@media (min-width: 1366px) {
+  #alert-box {
+    margin-left: 7.5rem;
+  }
+}
+
 #alert-box p {
   color: black;
   justify-content: center;
