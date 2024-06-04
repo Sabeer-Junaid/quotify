@@ -1,7 +1,11 @@
 // script.js
 
-// API endpoint for Quotable API
+// API endpoints
 const apiUrl = "https://api.quotable.io/random";
+"https://quoteapi.com/api/v1/quote?limit=1",
+  "https://theysaidso.com/api/quote-of-the-day",
+  "https://goodreads.com/api/quotes/random_key",
+  "https://brainyquote.com/api/quote/random";
 
 // Function to fetch a random quote
 function getQuote() {
@@ -31,12 +35,14 @@ getQuote();
 
 // Copy Quote
 
-const quote = document.getElementById('quote');
-const CopyBtn = document.getElementById('copy-btn');
+const quote = document.querySelector(".quote");
+const CopyBtn = document.getElementById("copy-btn");
+const author = document.querySelector(".author");
 
 CopyBtn.addEventListener("click", async () => {
   try {
-    await navigator.clipboard.writeText(quote.textContent);
+    const quoteText = `${quote.textContent} ${author.textContent}`;
+    await navigator.clipboard.writeText(quoteText);
     alert("Quote copied to clipboard!");
   } catch (error) {
     console.error("Error copying quote:", error);
