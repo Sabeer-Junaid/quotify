@@ -77,12 +77,11 @@ shareBtn.addEventListener("click", async () => {
   }
 });
 
-
 // Get the theme toggle button
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById("theme-toggle");
 
 // Add an event listener to the button
-themeToggle.addEventListener('click', () => {
+themeToggle.addEventListener("click", () => {
   // Toggle the dark theme class on the body element
-  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle("dark-theme");
 });
