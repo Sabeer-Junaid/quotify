@@ -6,6 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  transition: background-color 0.5s;
+}
+
+html{
+  --light-logo: url('assets/logo.png');
+  --dark-logo: url('assets/logo2.png');
 }
 
 :root {
@@ -192,4 +198,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* Light Theme */
+
+body.dark-theme,
+.quote.dark-theme{
+  background-color: white;
+  color: black;
 }

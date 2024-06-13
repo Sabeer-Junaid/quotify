@@ -76,3 +76,13 @@ shareBtn.addEventListener("click", async () => {
     console.error("Error sharing quote:", error);
   }
 });
+
+
+// Get the theme toggle button
+const themeToggle = document.getElementById('theme-toggle');
+
+// Add an event listener to the button
+themeToggle.addEventListener('click', () => {
+  // Toggle the dark theme class on the body element
+  document.body.classList.toggle('dark-theme');
+});
