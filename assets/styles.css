@@ -81,7 +81,6 @@ body {
   /* background-color: aqua; */
 }
 
-
 @media (min-width: 768px) {
   .cover-logo {
     margin-top: 3rem;
@@ -204,10 +203,10 @@ body.light-theme,
   color: black;
 }
 
-body.light-theme .cover-logo img{
-  filter: invert(1);  /*Change logo color on theme switch*/
+body.light-theme .cover-logo img {
+  filter: invert(1); /*Change logo color on theme switch*/
 }
 
-body.light-theme .themelogo{
+body.light-theme .themelogo {
   filter: invert(1);
 }
