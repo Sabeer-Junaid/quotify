@@ -9,11 +9,6 @@ body {
   transition: background-color 0.5s;
 }
 
-html {
-  --light-logo: url("assets/logo.png");
-  --dark-logo: url("assets/logo2.png");
-}
-
 :root {
   --greyishblack: hsl(0, 0%, 10%);
   --lightorangemix: hsl(10, 100%, 59%);
@@ -85,6 +80,7 @@ html {
   margin-top: 1rem;
   /* background-color: aqua; */
 }
+
 
 @media (min-width: 768px) {
   .cover-logo {
@@ -202,8 +198,16 @@ html {
 
 /* Light Theme */
 
-body.dark-theme,
-.quote.dark-theme {
+body.light-theme,
+.quote.light-theme {
   background-color: white;
   color: black;
+}
+
+body.light-theme .cover-logo img{
+  filter: invert(1);  /*Change logo color on theme switch*/
+}
+
+body.light-theme .themelogo{
+  filter: invert(1);
 }

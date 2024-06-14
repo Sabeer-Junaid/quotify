@@ -83,5 +83,5 @@ const themeToggle = document.getElementById("theme-toggle");
 // Add an event listener to the button
 themeToggle.addEventListener("click", () => {
   // Toggle the dark theme class on the body element
-  document.body.classList.toggle("dark-theme");
+  document.body.classList.toggle("light-theme");
 });
