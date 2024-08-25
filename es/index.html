@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="../assets/styles.css" />
 
     <title>Quotify</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="icon" href="../assets/images/logo.png" />
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <!-- Google Font -->
@@ -26,28 +26,28 @@
   </head>
 
   <body>
-    <!--Navbar-->
+    <!-- Navbar -->
     <div class="navbar container">
       <div class="menu">
         <button id="theme-toggle" class="btn">
-          <img src="assets/images/moon.png" style="height: 1.5rem" class="themelogo" />
+          <img src="../assets/images/moon.png" style="height: 1.5rem" class="themelogo" />
         </button>
       </div>
       <div class="menu ml-auto">
-        <img src="assets/images/dark-logo.png" style="height: 2rem" />
+        <img src="../assets/images/dark-logo.png" style="height: 2rem" />
       </div>
       <div class="menu ml-auto">
         <a href="https://github.com/Sabeer-Junaid/quotify" target="_blank">
           <button id="code-btn" class="btn">
-            <img src="assets/images/code-ico.png" style="height: 1.4rem" />
+            <img src="../assets/images/code-ico.png" style="height: 1.4rem" />
           </button>
         </a>
       </div>
     </div>
 
-    <!--Main-->
+    <!-- Main -->
     <div class="cover-logo container">
-      <img src="assets/images/dark-logo.png" class="logo" />
+      <img src="../assets/images/dark-logo.png" class="logo" />
     </div>
 
     <div class="content container">
@@ -59,15 +59,16 @@
       </p>
       <div class="icons">
         <button class="btn" id="share-btn">
-          <img src="assets/images/share-ico.png" />
+          <img src="../assets/images/share-ico.png" />
         </button>
         <button class="btn" id="generate-btn">
-          <img src="assets/images/newquote-ico.png" />
+          <img src="../assets/images/newquote-ico.png" />
         </button>
         <button class="btn" id="copy-btn">
-          <img src="assets/images/copy-ico.png" />
+          <img src="../assets/images/copy-ico.png" />
         </button>
-        <button class="btn" id="language-btn">
+        <!-- Language Button -->
+        <button class="btn" data-toggle="modal" data-target="#languageModal">
           <i class="fas fa-globe-americas"></i>
         </button>
       </div>
@@ -75,7 +76,7 @@
 
     <div id="alert-box" class="hidden container">
       <p id="alert-message">
-        <img src="assets/images/greendot.png" height="10" width="10" />Copied
+        <img src="../assets/images/greendot.png" height="10" width="10" /> Copiado
       </p>
     </div>
 
@@ -84,13 +85,13 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="languageModalLabel">Select Language</h5>
+            <h5 class="modal-title" id="languageModalLabel">Seleccionar Idioma</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <button class="btn btn-primary" onclick="window.location.href='/es/index.html'">Español</button>
+            <button class="btn btn-primary" onclick="window.location.href='../index.html'">Inglés</button>
           </div>
         </div>
       </div>
@@ -98,14 +99,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/script.js"></script>
+    <script src="assets/script-es.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-      document.getElementById('language-btn').addEventListener('click', function () {
-        $('#languageModal').modal('show');
-      });
-    </script>
   </body>
 </html>
